@@ -7,22 +7,20 @@
   <body>
     <div class="bg-image"></div>
     <div class="container">
-		<h1>Welcome to Text Editor</h1>
-		<p>Enter your text here:</p>
-        <div id = "textbox">
-		    <textarea id="text" name ="text" rows = "10" cols = "50"></textarea>
-        </div>
-        <hr>
-		<button onclick="saveText()">Save</button>
-	</div>
-	</div>
-	
-	<script>
-		function saveText() {
-			var userText = document.getElementById("userText").value;
-			console.log(userText);
-			// Add code here to save user's text
-		}
-	</script>
+        <h1>Welcome to Text Editor</h1>
+        <p>Enter your text here:</p>
+        <textarea id="userMessage"></textarea>
+    </div>
+    <hr>
+    <button onclick="saveText()">Save</button>
+    </div>
+    
+    <script>
+        function saveText() {
+            var userText = document.getElementById("userText").value;
+            console.log(userText);
+            // Add code here to save user's text
+        }
+    </script>
 </body>
 </html>
